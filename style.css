@@ -1,0 +1,391 @@
+/******************************************************************************
+
+/* overall page styling */
+:root {
+	--background: #ebebeb;
+}
+body {
+	background-color: #f0f0f0;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	margin: 0;
+}
+
+/******************************************************************************
+
+/* header and nav bar styling */
+
+/* logo  */
+.logo {
+	display: flex;
+	justify-content: center;
+}
+.nav-logo {
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	padding: 10px;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	background: var(--background);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+/******************************************************************************
+
+/* Navigation Menu */
+
+nav {
+	background: var(--background);
+	height: 140px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+nav li {
+	position: relative;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.social-li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+nav a {
+	color: #1b4040;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #966161;
+}
+
+/******************************************************************************
+
+/* text styling */
+h1 {
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+}
+
+h3 {
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-align: center;
+}
+h4 {
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+h5 {
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: left;
+}
+h6 {
+	color: #1b4040;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: right;
+}
+
+p {
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+
+/******************************************************************************
+/* button styling */
+
+.button {
+	display: block;
+	background-color: #966161;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 2px solid #966161;
+
+	padding: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: #f0f0f0;
+	color: #966161;
+	border: 2px solid #966161;
+}
+
+/* text link styling */
+
+.homepage-links:link,
+.homepage-links:visited,
+.homepage-links:hover,
+.productpage-links {
+	color: white;
+	text-decoration: none;
+}
+.homepage-links-dark:link,
+.homepage-links-dark:visited {
+	color: #3d4042;
+	text-decoration: none;
+}
+
+.homepage-links-dark:hover {
+	color: #966161;
+	text-decoration: none;
+}
+
+/******************************************************************************
+
+/* Layout flexboxes */
+
+.wrapper {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.homepage-box,
+.about-box,
+.shop-box .product-box {
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Blog boxes */
+
+.blog-title {
+	display: flex;
+	height: 80px;
+	margin: 24px auto 24px;
+	background: #3d4042;
+}
+
+.flex-container-blog {
+	display: flex;
+	flex-direction: row;
+	height: 320px;
+}
+
+.blog-one {
+	box-sizing: border-box;
+	border: 6px solid #3d4042;
+	flex: 1;
+	margin-right: 6px;
+	flex-direction: column;
+}
+.blog-two {
+	box-sizing: border-box;
+	border: 6px solid #3d4042;
+	flex: 1;
+	margin: 0 6px 0 6px;
+	flex-direction: column;
+}
+.blog-three {
+	box-sizing: border-box;
+	border: 6px solid #3d4042;
+	flex: 1;
+	margin-left: 6px;
+	flex-direction: column;
+}
+
+/******************************************************************************
+/* form input styling */
+
+.form {
+	height: 234px;
+	background-color: rgba(150, 97, 97, 0.2);
+	color: #3d4042;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.newsletter-signup-copy {
+	max-width: 600px;
+	margin: auto;
+}
+
+.form-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	overflow: auto;
+	height: 30px;
+	width: 200px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	border: none;
+	margin-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+/******************************************************************************
+
+/* footer nav styling */
+footer {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
+	margin-top: 48px;
+}
+
+.footer-logo {
+	display: flex;
+	margin: 0 auto;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-li {
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.social-ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.social-li {
+	display: flex;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	height: 20px;
+}
+
+.footer-links {
+	color: #1b4040;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.footer-links:hover {
+	color: #966161;
+}
+
+/******************************************************************************
+/* responsiveness */
+
+@media screen and (max-width: 480px) {
+	.one,
+	.three,
+	.four,
+	.six,
+	.eight,
+	.ten {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.name,
+	.email,
+	.button {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	nav ul {
+		flex-direction: column;
+	}
+}
+
+/* @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+} */
