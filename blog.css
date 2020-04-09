@@ -1,8 +1,6 @@
 /******************************************************************************
 
-/* HOME PAGE */
-
-/* Shop all row */
+/* BLOG PAGE */
 
 .flex-container-headline {
 	display: flex;
@@ -37,4 +35,15 @@
 }
 .view-older-posts {
 	padding: 24px;
+}
+
+/******************************************************************************
+
+/* BLOG POST */
+
+.flex-container-headline-image {
+	background-image: url("Image Assets/Image_01.jpg");
+	background-size: cover;
+	height: 480px;
+	margin: 188px auto 24px;
 }
