@@ -1,0 +1,40 @@
+/******************************************************************************
+
+/* HOME PAGE */
+
+/* Shop all row */
+
+.flex-container-headline {
+	display: flex;
+	flex-direction: row;
+	height: 480px;
+	margin: 188px auto 24px;
+}
+
+.headline-image {
+	background-image: url("Image Assets/Image_01.jpg");
+	background-size: cover;
+	flex: 1;
+	box-sizing: border-box;
+	border: 6px solid #3d4042;
+}
+
+.headline-text {
+	background: #3d4042;
+	flex: 1;
+	padding-right: 6px;
+	flex-direction: column;
+}
+
+.headline-text h2 {
+	color: white;
+}
+
+.headline-text h3 {
+	padding-left: 48px;
+	padding-right: 48px;
+	color: white;
+}
+.view-older-posts {
+	padding: 24px;
+}

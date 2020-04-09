@@ -344,6 +344,10 @@ footer {
 	height: 20px;
 }
 
+.mail-links {
+	color: #3d4042;
+	text-decoration: none;
+}
 .footer-links {
 	color: #1b4040;
 	text-decoration: none;

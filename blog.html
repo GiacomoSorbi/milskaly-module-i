@@ -9,6 +9,7 @@
 			href="Image Assets/Techne-favicon.png"
 		/>
 		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="blog.css" rel="stylesheet" type="text/css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
 			rel="stylesheet"
@@ -34,100 +35,140 @@
 	<body>
 		<main>
 			<div class="wrapper">
-				<div class="flex-container-01">
-					<h1>
-						Techne Journal
-					</h1>
+				<div class="flex-container-headline">
+					<div class="homepage-box headline-image"></div>
+					<div class="homepage-box headline-text">
+						<h2>HOW TO GET STARTED WITH PLANNING</h2>
+						<h3>
+							Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero
+							quam ut maiosae rovitiur? Qui idendis dis corro et quis eos
+							volecea volore iunt essedit ape eniscius dolupta que nitatin et
+							essimil lesequa spedior erferro idus id magnimagname sam, que ea
+							qui intiati busdae quis se ne que dolupta quatem que nobit fuga.
+							Nem vel modit, ut excerem idunt estis as ullo ium es ma sapicat
+							explitatem unt aut quam nis apel id ma quasim fugitae sam
+							voloresto conet ut denda simus.
+						</h3>
+						<h3>
+							<a class="productpage-links" href="shop.html">READ MORE</a>
+						</h3>
+					</div>
 				</div>
-      </div>
-      <div class="wrapper">
-				<div class="flex-container-headline-journal">
-          <div class="headline-journal headline-journal-text">
-          <h1>Headline Blog Post</h1></div>
-      
-        <div class="headline-journal headline-journal-image"></div>
-      
-      </div>
+
+				<div class="flex-container-blog">
+					<div class="homepage-box blog-one">
+						<h1>PRIORITISING YOUR TO DO LISTS</h1>
+						<h3>
+							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
+						</h3>
+					</div>
+					<div class=" homepage-box blog-two">
+						<h1>TOOLS FOR TACKLING PROCRASTINATION</h1>
+						<h3>
+							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
+						</h3>
+					</div>
+					<div class=" homepage-box blog-three">
+						<h1>PLANNING FOR A SUCCESSFUL LAUNCH</h1>
+						<h3>
+							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
+						</h3>
+					</div>
 				</div>
-			</div>
-			<div class="wrapper">
-				<div class="flex-container-journal-row-one">
-					<div class="journal-box blog-one">
-						<h2>BLOG POST 1</h2>
-          </div>
-          
-            <div class="journal-box blog-two">
-              <h2>BLOG POST 2</h2>
-            </div>
-           
-              <div class="journal-box blog-three">
-                <h2>BLOG POST 3</h2>
-              </div>
-              </div>
-              <div class="flex-container-journal-row-two">
-                <div class="journal-box blog-one">
-                  <h2>BLOG POST 4</h2>
-                </div>
-               
-                  <div class="journal-box blog-two">
-                    <h2>BLOG POST 5</h2>
-                  </div>
-                 
-                    <div class="journal-box blog-three">
-                      <h2>BLOG POST 6</h2>
-                    </div></div>
-                        </div>
-				</div>
-			</div>
+			<div class="view-older-posts">
+			<h3>VIEW OLDER POSTS</h3> </div>
 		</main>
-		<form action="/example.html" method="POST">
-			<h2>Got some questions?</h2>
-			<h3>
-				Please feel free to get in touch by filling out the form below. <br />
-				Not a fan of forms? Drop us an email
-				<a class="text-links" href="mailto:hello@techne.co.uk">here</a>
-			</h3>
-			<p>
-				<label class="name">
-					<input type="text" name="customer_name" required placeholder="Name" />
-				</label>
+		<form class="form" action="/example.html" method="POST">
+			<h2>SIGN UP TO PLANNING POST</h2>
+			<p class="newsletter-signup-copy">
+				Our fortnightly email is packed with planning exercises & prompts for
+				your business along with links to useful resources.
 			</p>
+			<div class="form-box">
+				<p>
+					<label class="name">
+						<input
+							type="text"
+							name="customer_name"
+							required
+							placeholder="full name"
+						/>
+					</label>
+				</p>
 
-			<p>
-				<label class="email">
-					<input
-						type="email"
-						name="email_address"
-						required
-						placeholder="Email"
-					/>
-				</label>
-			</p>
-			<p>
-				<label class="subject">
-					<input
-						type="subject"
-						name="email_subject"
-						required
-						placeholder="Lets Talk About..."
-					/>
-				</label>
-			</p>
-
-			<p>
-				<textarea
-					class="comments"
-					name="comments"
-					maxlength="2000"
-					required
-					placeholder="It's always nice to hear from you!"
-				></textarea>
-			</p>
-
-			<button class="button">Send</button>
+				<p>
+					<label class="email">
+						<input
+							type="email"
+							name="email_address"
+							required
+							placeholder="please enter your email address "
+						/>
+					</label>
+				</p>
+				<button class="button">Send</button>
+			</div>
 		</form>
-		<footer class="site-footer">
-			© Emilia Kalyvides 2019 | All Rights Reserved
+		<footer>
+			<div class="site-footer" class="footer-container">
+				<a class="footer-logo" href="index.html"
+					><img
+						src="Image Assets/Techne.png"
+						alt="Techne Logo"
+						class="footer-logo"
+				/></a>
+				<div>
+					<div>
+						<ul class="footer-ul" style="padding:10px">
+							<li class="footer-li">
+								<a class="footer-links" href="index.html">Home</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="about.html">About</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="shop.html">Shop</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="journal.html">Journal</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="social-ul" style="padding:0px">
+							<li class="social-li">
+								<a href="https://www.facebook.com" target="_blank">
+									<img
+										class="social-icons"
+										src="Image Assets/facebook_logo.png"
+										alt="facebook-logo"
+										height="25px"
+								/></a>
+							</li>
+							<li class="social-li">
+								<a href="https://www.pinterest.com" target="_blank">
+									<img
+										class="social-icons"
+										src="Image Assets/pinterest_logo.png"
+										alt="pinterest-logo"
+										height="25px"
+								/></a>
+							</li>
+							<li class="social-li">
+								<a href="https://www.youtube.com" target="_blank"
+									><img
+										class="social-icons"
+										src="Image Assets/youtube_logo.png"
+										alt="cart-logo"
+										height="25px"
+								/></a>
+							</li>
+						</ul>
+
+						<p>&copy; Emilia Kalyvides 2020 | All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
