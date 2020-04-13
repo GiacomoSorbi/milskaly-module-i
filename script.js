@@ -8,7 +8,9 @@ if (document.readyState == "loading") {
 // activate remove buttons
 // add an event to say when the button is clicked the item should be removed
 function ready() {
-	let removeCartButtonItems = document.getElementsByClassName("button-danger");
+	let removeCartButtonItems = document.getElementsByClassName(
+		"button-purchase"
+	);
 	for (let i = 0; i < removeCartButtonItems.length; i++) {
 		let button = removeCartButtonItems[i];
 		button.addEventListener("click", removeCartItem);
@@ -16,7 +18,7 @@ function ready() {
 
 	// event listener to determine any time the quanity input changes its value
 	// quantity change function
-	let quantityInputs = document.getElementsByClassName("cart-quantity-input");
+	let quantityInputs = document.getElementsByClassName("basket-quantity-input");
 	for (let i = 0; i < quantityInputs.length; i++) {
 		let input = quantityInputs[i];
 		input.addEventListener("change", quantityChanged);
@@ -36,7 +38,7 @@ function ready() {
 // Creates an alert to confirm you've purchased an item
 function purchaseClicked() {
 	alert("Thank you for your purchase");
-	let cartItems = document.getElementsByClassName("cart-items")[0];
+	let cartItems = document.getElementsByClassName("basket-items")[0];
 	while (cartItems.hasChildNodes()) {
 		cartItems.removeChild(cartItems.firstChild);
 	}
@@ -71,9 +73,9 @@ function addToCartClicked(event) {
 //creates cart row/element for item to cart items
 function addItemToCart(title, price, imageSrc) {
 	let cartRow = document.createElement("div");
-	cartRow.classList.add("cart-row");
-	let cartItems = document.getElementsByClassName("cart-items")[0];
-	let cartItemNames = cartItems.getElementsByClassName("cart-item-title");
+	cartRow.classList.add("basket-row");
+	let cartItems = document.getElementsByClassName("basket-items")[0];
+	let cartItemNames = cartItems.getElementsByClassName("basket-item-title");
 	//stops items in basket duplicating
 	for (let i = 0; i < cartItemNames.length; i++) {
 		if (cartItemNames[i].innerText == title) {
@@ -82,14 +84,14 @@ function addItemToCart(title, price, imageSrc) {
 		}
 	}
 	let cartRowContents = `
-	<div class="cart-item cart-column">
-	<img class="cart-item-image" src="${imageSrc}">
-	<span class="cart-item-title"><h5>${title}</span>
+	<div class="basket-item cart-column">
+	<img class="basket-item-image" src="${imageSrc}">
+	<span class="basket-item-title"><p>${title}</p></span>
 </div>
-<span class="cart-price cart-column"><h5>${price}</h5> </span>
-<div class="cart-quantity cart-column">
-	<input class="cart-quantity-input" type="number" value="1">
-	<button class="button button-danger" type="button">REMOVE</button>
+<span class="basket-price cart-column"><p>${price}</p> </span>
+<div class="basket-quantity cart-column">
+	<input class="basket-quantity-input" type="number" value="1">
+	<button class="button button-purchase" type="button">REMOVE</button>
 </div>
 </div>`;
 	cartRow.innerHTML = cartRowContents;
@@ -97,11 +99,11 @@ function addItemToCart(title, price, imageSrc) {
 
 	//removes cart items after the remove button has been clicked
 	cartRow
-		.getElementsByClassName("button-danger")[0]
+		.getElementsByClassName("button-purchase")[0]
 		.addEventListener("click", removeCartItem);
 
 	cartRow
-		.getElementsByClassName("cart-quantity-input")[0]
+		.getElementsByClassName("basket-quantity-input")[0]
 		.addEventListener("change", quantityChanged);
 }
 
@@ -109,14 +111,14 @@ function addItemToCart(title, price, imageSrc) {
 // Find the price of all items in each row and the quanity and multiply them
 // Add together to get the total
 function updateCartTotal() {
-	let cartItemContainer = document.getElementsByClassName("cart-items")[0];
-	let cartRows = cartItemContainer.getElementsByClassName("cart-row");
+	let cartItemContainer = document.getElementsByClassName("basket-items")[0];
+	let cartRows = cartItemContainer.getElementsByClassName("basket-row");
 	let total = 0;
 	for (let i = 0; i < cartRows.length; i++) {
 		let cartRow = cartRows[i];
-		let priceElement = cartRow.getElementsByClassName("cart-price")[0];
+		let priceElement = cartRow.getElementsByClassName("basket-price")[0];
 		let quantityElement = cartRow.getElementsByClassName(
-			"cart-quantity-input"
+			"basket-quantity-input"
 		)[0];
 		let price = parseFloat(priceElement.innerText.replace("£", ""));
 		let quantity = quantityElement.value;
@@ -125,6 +127,6 @@ function updateCartTotal() {
 
 	//rounds total to two decimal places
 	total = Math.round(total * 100) / 100;
-	document.getElementsByClassName("cart-total-price")[0].innerText =
+	document.getElementsByClassName("basket-total-price")[0].innerText =
 		"£" + total;
 }

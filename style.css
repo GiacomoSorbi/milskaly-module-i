@@ -132,7 +132,7 @@ h6 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 20px;
-	text-align: right;
+	margin: 0;
 }
 
 p {
@@ -172,7 +172,8 @@ p {
 .homepage-links:link,
 .homepage-links:visited,
 .homepage-links:hover,
-.productpage-links {
+.productpage-links,
+.text-links {
 	color: white;
 	text-decoration: none;
 }
@@ -199,7 +200,9 @@ p {
 
 .homepage-box,
 .about-box,
-.shop-box .product-box {
+.shop-box,
+.product-box,
+.basket-box {
 	min-width: 200px;
 	display: flex;
 	justify-content: center;
