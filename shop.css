@@ -161,7 +161,7 @@ h1 {
 
 .basket-items {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .basket-item-title,
