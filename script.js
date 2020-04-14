@@ -38,9 +38,9 @@ function ready() {
 // Creates an alert to confirm you've purchased an item
 function purchaseClicked() {
 	alert("Thank you for your purchase");
-	let BasketItems = document.getElementsByClassName("basket-items")[0];
-	while (BasketItems.hasChildNodes()) {
-		BasketItems.removeChild(BasketItems.firstChild);
+	let basketItems = document.getElementsByClassName("basket-items")[0];
+	while (basketItems.hasChildNodes()) {
+		basketItems.removeChild(basketItems.firstChild);
 	}
 
 	updateBasketTotal();
@@ -72,18 +72,18 @@ function addToBasketClicked(event) {
 
 //creates Basket row/element for item to Basket items
 function addItemToBasket(title, price, imageSrc) {
-	let BasketRow = document.createElement("div");
-	BasketRow.classList.add("basket-row");
-	let BasketItems = document.getElementsByClassName("basket-items")[0];
-	let BasketItemNames = BasketItems.getElementsByClassName("basket-item-title");
+	let basketRow = document.createElement("div");
+	basketRow.classList.add("basket-row");
+	let basketItems = document.getElementsByClassName("basket-items")[0];
+	let basketItemNames = basketItems.getElementsByClassName("basket-item-title");
 	//stops items in basket duplicating
-	for (let i = 0; i < BasketItemNames.length; i++) {
-		if (BasketItemNames[i].innerText == title) {
+	for (let i = 0; i < basketItemNames.length; i++) {
+		if (basketItemNames[i].innerText === title) {
 			alert("This item is already in your basket");
 			return;
 		}
 	}
-	let BasketRowContents = `
+	let basketRowContents = `
 	<div class="basket-item">
 	<img class="basket-item-image" src="${imageSrc}">
 	<div class="basket-item-title"><p>${title}</p></div>
@@ -95,32 +95,30 @@ function addItemToBasket(title, price, imageSrc) {
 </div>
 </div>`;
 
-	BasketRow.innerHTML = BasketRowContents;
-	BasketItems.append(BasketRow);
+	basketRow.innerHTML = basketRowContents;
+	basketItems.append(basketRow);
 
 	//removes Basket items after the remove button has been clicked
-	BasketRow.getElementsByClassName("button-remove")[0].addEventListener(
-		"click",
-		removeBasketItem
-	);
+	basketRow
+		.getElementsByClassName("button-remove")[0]
+		.addEventListener("click", removeBasketItem);
 
-	BasketRow.getElementsByClassName("basket-quantity-input")[0].addEventListener(
-		"change",
-		quantityChanged
-	);
+	basketRow
+		.getElementsByClassName("basket-quantity-input")[0]
+		.addEventListener("change", quantityChanged);
 }
 
 // Update Basket total
 // Find the price of all items in each row and the quanity and multiply them
 // Add together to get the total
 function updateBasketTotal() {
-	let BasketItemContainer = document.getElementsByClassName("basket-items")[0];
-	let BasketRows = BasketItemContainer.getElementsByClassName("basket-row");
+	let basketItemContainer = document.getElementsByClassName("basket-items")[0];
+	let basketRows = basketItemContainer.getElementsByClassName("basket-row");
 	let total = 0;
-	for (let i = 0; i < BasketRows.length; i++) {
-		let BasketRow = BasketRows[i];
-		let priceElement = BasketRow.getElementsByClassName("basket-price")[0];
-		let quantityElement = BasketRow.getElementsByClassName(
+	for (let i = 0; i < basketRows.length; i++) {
+		let basketRow = basketRows[i];
+		let priceElement = basketRow.getElementsByClassName("basket-price")[0];
+		let quantityElement = basketRow.getElementsByClassName(
 			"basket-quantity-input"
 		)[0];
 		let price = parseFloat(priceElement.innerText.replace("£", ""));
