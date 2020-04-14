@@ -160,16 +160,14 @@ h1 {
 	text-align: left;
 }
 
-/* Update typography!!!!!*/
 .basket-total-title,
 .basket-total-price {
 	flex: 1;
-	color: #3d4042;
+	color: #1b4040;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 15px;
 	text-align: left;
-	padding-top: 24px;
 }
 
 .basket-item {
@@ -196,8 +194,7 @@ h1 {
 }
 
 .basket-item-image {
-	width: 75px;
-	height: 75px;
+	width: 100px;
 	background-size: cover;
 }
 

@@ -54,7 +54,7 @@
 							qui intiati busdae quis se ne que dolupta quatem que nobit fuga.
 						
 							</p>
-							<div class="product-box"></div><h6 class = "product-price ">&pound;25</h6>
+							<div class="product-box"></div><h2 class = "product-price ">&pound;25</h2>
 							<button class="shop-item-button ">BUY</button>
 							<h3><a class="text-links" href="product-info.html">Find out more about this product?</a></h3> 
 						</div>
@@ -67,7 +67,7 @@
 							Your bi-weekly planner
 						
 							</p>
-							<div class="product-box"></div><h6 class = "product-price ">&pound;25</h6>
+							<div class="product-box"></div><h2 class = "product-price ">&pound;25</h2>
 							<button class="shop-item-button ">BUY </button>
 							
 						</div>
@@ -78,7 +78,7 @@
 								Your daily planner
 						
 							</p>
-							<div class="product-box"></div><h6 class = "product-price ">&pound;25</h6>
+							<div class="product-box"></div><h2 class = "product-price ">&pound;25</h2>
 							<button class="shop-item-button ">BUY </button>
 							
 						</div>
@@ -91,7 +91,7 @@
 								Your annual planner
 							
 								</p>
-								<div class="product-box"></div><h6 class = "product-price ">&pound;25</h6>
+								<div class="product-box"></div><h2 class = "product-price ">&pound;25</h2>
 								<button class="shop-item-button ">BUY </button>
 								
 							</div>
@@ -102,7 +102,7 @@
 									Your weekly planner
 							
 								</p>
-								<div class="product-box"></div><h6 class = "product-price ">&pound;25</h6>
+								<div class="product-box"></div><h2 class = "product-price ">&pound;25</h2>
 								<button class="shop-item-button ">BUY </button>
 								
 							</div>
@@ -124,9 +124,9 @@
 
 				
                 <div class="basket-row">
-                    <div class="basket-item"><p>ITEM</p></div>
-                    <div class="basket-price"><p>PRICE</p></div>
-                    <div class="basket-quantity"><p>QUANTITY</p></div>
+                    <div class="basket-item"><h5>ITEM</h5></div>
+                    <div class="basket-price"><h5>PRICE</h5></div>
+                    <div class="basket-quantity"><h5>QUANTITY</h5></div>
 				</div>
 			
                 <div class="basket-items">
@@ -135,8 +135,8 @@
 				
 					</div>
                 <div class="basket-total">
-					<div class="basket-total-title">TOTAL</div>
-					<div class="basket-total-price">£0</div>
+					<div class="basket-total-title"><h5>TOTAL</h5></div>
+					<div class="basket-total-price"><h5>£0</h5></div>
 				</div>
                 
                 <button class="button button-purchase" type="button">PURCHASE</button>
@@ -171,68 +171,98 @@
 				</p>
 				<button class="button">Send</button>
 			</div>
-		</form>
-		<footer>
-			<div class="site-footer" class="footer-container">
-				<a class="footer-logo" href="index.html"
-					><img
-						src="Image Assets/Techne.png"
-						alt="Techne Logo"
-						class="footer-logo"
-				/></a>
-				<div>
+			<form class="form" action="/example.html" method="POST">
+				<h2>SIGN UP TO PLANNING POST</h2>
+				<p class="newsletter-signup-copy">
+					Our fortnightly email is packed with planning exercises & prompts for
+					your business along with links to useful resources.
+				</p>
+				<div class="form-box">
+					<h6>
+						<label class="name">
+							<input
+								type="text"
+								name="customer_name"
+								required
+								placeholder="full name"
+							/>
+						</label>
+					</h6>
+	
+					<h6>
+						<label class="email">
+							<input
+								type="email"
+								name="email_address"
+								required
+								placeholder="please enter your email address "
+							/>
+						</label>
+					</h6>
+					<button class="button">Send</button>
+				</div>
+			</form>
+			<footer>
+				<div class="site-footer" class="footer-container">
+					<a class="footer-logo" href="index.html"
+						><img
+							src="Image Assets/Techne.png"
+							alt="Techne Logo"
+							class="footer-logo"
+					/></a>
 					<div>
-						<ul class="footer-ul" style="padding:10px">
-							<li class="footer-li">
-								<a class="footer-links" href="index.html">Home</a>
-							</li>
-							<li class="footer-li">
-								<a class="footer-links" href="about.html">About</a>
-							</li>
-							<li class="footer-li">
-								<a class="footer-links" href="shop.html">Shop</a>
-							</li>
-							<li class="footer-li">
-								<a class="footer-links" href="journal.html">Journal</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<ul class="social-ul" style="padding:0px">
-							<li class="social-li">
-								<a href="https://www.facebook.com" target="_blank">
-									<img
-										class="social-icons"
-										src="Image Assets/facebook_logo.png"
-										alt="facebook-logo"
-										height="25px"
-								/></a>
-							</li>
-							<li class="social-li">
-								<a href="https://www.pinterest.com" target="_blank">
-									<img
-										class="social-icons"
-										src="Image Assets/pinterest_logo.png"
-										alt="pinterest-logo"
-										height="25px"
-								/></a>
-							</li>
-							<li class="social-li">
-								<a href="https://www.youtube.com" target="_blank"
-									><img
-										class="social-icons"
-										src="Image Assets/youtube_logo.png"
-										alt="cart-logo"
-										height="25px"
-								/></a>
-							</li>
-						</ul>
-
-						<p>&copy; Emilia Kalyvides 2020 | All Rights Reserved</p>
+						<div>
+							<ul class="footer-ul" style="padding:10px">
+								<li class="footer-li">
+									<a class="footer-links" href="index.html">Home</a>
+								</li>
+								<li class="footer-li">
+									<a class="footer-links" href="about.html">About</a>
+								</li>
+								<li class="footer-li">
+									<a class="footer-links" href="shop.html">Shop</a>
+								</li>
+								<li class="footer-li">
+									<a class="footer-links" href="journal.html">Journal</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul class="social-ul" style="padding:0px">
+								<li class="social-li">
+									<a href="https://www.facebook.com" target="_blank">
+										<img
+											class="social-icons"
+											src="Image Assets/facebook_logo.png"
+											alt="facebook-logo"
+											height="25px"
+									/></a>
+								</li>
+								<li class="social-li">
+									<a href="https://www.pinterest.com" target="_blank">
+										<img
+											class="social-icons"
+											src="Image Assets/pinterest_logo.png"
+											alt="pinterest-logo"
+											height="25px"
+									/></a>
+								</li>
+								<li class="social-li">
+									<a href="https://www.youtube.com" target="_blank"
+										><img
+											class="social-icons"
+											src="Image Assets/youtube_logo.png"
+											alt="cart-logo"
+											height="25px"
+									/></a>
+								</li>
+							</ul>
+	
+							<h6>&copy; Emilia Kalyvides 2020 | All Rights Reserved</h6>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</body>
-</html>
-
+			</footer>
+		</body>
+	</html>
+	

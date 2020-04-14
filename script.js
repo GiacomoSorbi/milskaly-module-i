@@ -86,9 +86,9 @@ function addItemToBasket(title, price, imageSrc) {
 	let basketRowContents = `
 	<div class="basket-item">
 	<img class="basket-item-image" src="${imageSrc}">
-	<div class="basket-item-title"><p>${title}</p></div>
+	<div class="basket-item-title"><h5>${title}</h5></div>
 </div>
-<div class="basket-price"><p>${price}</p> </div>
+<div class="basket-price"><h5>${price}</h5> </div>
 <div class="basket-quantity">
 	<input class="basket-quantity-input" type="number" value="1">
 	<button class="button button-remove fa fa-trash" type="button"></button>
