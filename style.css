@@ -23,8 +23,8 @@ body {
 .nav-logo {
 	display: flex;
 	justify-content: center;
-	height: 60px;
 	padding: 10px;
+	height: calc(35px + (40 - 35) * ((100vw - 375px) / (1024 - 375)));
 }
 
 .nav-container {
@@ -49,22 +49,22 @@ header {
 
 /* Navigation Menu */
 
-nav {
+.topnav {
 	background: var(--background);
-	height: 140px;
 	flex-direction: row;
 	justify-content: space-between;
+	max-height: 100px;
 }
-nav ul {
+.topnav ul {
 	list-style: none;
 	display: flex;
 	align-items: center;
-	padding: 5px;
+	padding: 15px;
 }
-nav li {
+.topnav li {
 	position: relative;
-	margin-left: 45px;
-	margin-right: 45px;
+	margin-left: 75px;
+	margin-right: 75px;
 }
 
 .social-li {
@@ -75,13 +75,17 @@ nav li {
 nav a {
 	color: #1b4040;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: calc(15px + (18 - 15) * ((100vw - 375px) / (1024 - 375)));
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 nav a:hover {
 	color: #966161;
+}
+
+#toggle {
+	display: none;
 }
 
 /******************************************************************************
@@ -91,58 +95,72 @@ h1 {
 	color: #3d4042;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
+	font-size: calc(18px + (20 - 18) * ((100vw - 375px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 12px;
 }
 
 h2 {
 	color: #3d4042;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 20px;
 	text-align: center;
+	font-size: calc(15px + (18 - 15) * ((100vw - 375px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 12px;
 }
 
 h3 {
 	color: #3d4042;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 15px;
 	text-align: center;
+	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 6px;
 }
 h4 {
 	color: #1b4040;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
-	font-size: 15px;
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
+	font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 6px;
 }
 h5 {
 	color: #1b4040;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 15px;
 	text-align: left;
 	margin: 0;
+	font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 3px;
 }
 h6 {
 	color: #1b4040;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 10px;
 	margin: 0;
 	text-align: center;
+	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 3px;
 }
 
 p {
 	color: #3d4042;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
-	font-size: 15px;
 	text-align: center;
+	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 6px;
 }
 
 /******************************************************************************
@@ -207,6 +225,7 @@ p {
 .basket-box {
 	min-width: 200px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	flex-basis: 100%;
@@ -217,51 +236,51 @@ p {
 /* Blog boxes */
 
 .blog-title {
-	display: flex;
 	height: 80px;
-	margin: 24px auto 24px;
+	margin: 24px 6px 24px;
 	background: #3d4042;
 }
 
 .flex-container-blog {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	height: 320px;
 }
 
 .blog-one {
-	box-sizing: border-box;
-	border: 6px solid #3d4042;
+	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	flex: 1;
-	margin-right: 6px;
 	flex-direction: column;
+	min-height: 100px;
+	margin: 6px 6px 6px;
 }
 .blog-two {
-	box-sizing: border-box;
-	border: 6px solid #3d4042;
+	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	flex: 1;
-	margin: 0 6px 0 6px;
 	flex-direction: column;
+	min-height: 100px;
+	margin: 6px 6px 6px;
 }
 .blog-three {
-	box-sizing: border-box;
-	border: 6px solid #3d4042;
+	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	flex: 1;
-	margin-left: 6px;
 	flex-direction: column;
+	min-height: 100px;
+	margin: 6px 6px 6px;
 }
 
 /******************************************************************************
 /* form input styling */
 
 .form {
-	height: 234px;
+	min-height: 234px;
 	background-color: rgba(150, 97, 97, 0.2);
 	color: #3d4042;
 	margin-top: 48px;
 	margin-bottom: 48px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .newsletter-signup-copy {
@@ -272,8 +291,19 @@ p {
 
 .form-box {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+}
+
+.form-fields {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 3px 3px 12px 3px;
 }
 
 input {
@@ -283,10 +313,10 @@ input {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	border: none;
-	margin-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 10px;
+	margin: 3px;
 }
 
 /******************************************************************************
@@ -297,6 +327,7 @@ footer {
 	width: 100%;
 	height: 180px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	z-index: 999;
 	margin-top: 48px;
@@ -304,6 +335,7 @@ footer {
 
 .footer-logo {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	height: 30px;
 	padding-top: 10px;
@@ -312,6 +344,7 @@ footer {
 
 .footer-container {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	width: 100%;
 	max-width: 1024px;
@@ -323,11 +356,13 @@ footer {
 .footer-ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 .footer-li {
 	display: flex;
+	flex-wrap: wrap;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -335,17 +370,20 @@ footer {
 .social-ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .social-li {
 	display: flex;
+	flex-wrap: wrap;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 .social-icons {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	height: 20px;
 }
@@ -369,33 +407,53 @@ footer {
 /******************************************************************************
 /* responsiveness */
 
-@media screen and (max-width: 480px) {
-	.one,
-	.three,
-	.four,
-	.six,
-	.eight,
-	.ten {
+/*MOBILE PHONE - iPhone X 375px screen*/
+
+@media only screen and (max-width: 375px) {
+	.topnav {
+		justify-content: center;
+		max-height: 100px;
+	}
+
+	.topnav li {
+		position: relative;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.topnav ul {
+		padding: 5px;
+	}
+	h2 {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	footer {
+		max-height: 120px;
+	}
+
+	.site-footer {
+		background-color: #ebebeb;
+		width: 100%;
+	}
+
+	.footer-logo {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 480px) {
-	.name,
-	.email,
-	.button {
+	.footer-links {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 480px) {
-	nav ul {
-		flex-direction: column;
+	.form {
+		padding: 24px;
+	}
+
+	.form h2 {
+		padding-top: 0px;
+	}
+
+	.form-box {
+		flex-flow: column nowrap;
 	}
 }
-
-/* @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 25px;
-  }
-} */

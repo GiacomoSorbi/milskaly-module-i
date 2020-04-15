@@ -6,9 +6,10 @@
 
 .flex-container-shop-all {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	height: 480px;
-	margin: 188px auto 24px;
+	height: 488px;
+	margin: 188px 6px 24px;
 }
 
 .shop-all-one {
@@ -17,51 +18,67 @@
 	flex: 2;
 	box-sizing: border-box;
 	border: 6px solid #1b4040;
+	min-height: 200px;
 }
 
 .shop-all-two {
 	background: #1b4040;
 	flex: 1;
-	padding-right: 6px;
+	min-height: 100px;
 }
 
 /* Shop product sections row */
 
 .flex-container-product-sections {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	height: 320px;
+	min-height: 320px;
 }
 
-.product-section-one-img {
+.shop-planners,
+.shop-planner-inserts {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 320px;
+	margin: 6px;
+	flex: 1;
+}
+
+.shop-planners-img {
 	background-image: url("Image Assets/Image_02.jpg");
 	background-size: cover;
 	flex: 2;
-	box-sizing: border-box;
-	border: 6px solid #966161;
+	box-shadow: inset 0px 0px 0px 6px #966161;
+	min-height: 200px;
 }
 
-.product-section-one {
+.shop-planners-details {
 	background: #966161;
 	flex: 1;
-	padding-right: 12px;
-	padding-left: 6px;
-	margin-right: 6px;
+	min-height: 100px;
 }
 
-.product-section-two-img {
+.shop-planner-inserts-img {
 	background-image: url("Image Assets/Image_03.jpg");
 	background-size: cover;
 	flex: 2;
-	box-sizing: border-box;
-	border: 6px solid #647973;
-	margin-left: 6px;
+	box-shadow: inset 0px 0px 0px 6px #647973;
+	min-height: 200px;
 }
 
-.product-section-two {
+.shop-planner-inserts-details {
 	background: #647973;
 	flex: 1;
-	padding-right: 12px;
-	padding-left: 6px;
+	min-height: 100px;
 }
 
+/******************************************************************************
+/* responsiveness */
+@media only screen and (max-width: 375px) {
+	.flex-container-shop-all {
+		max-height: 320px;
+		margin: 130px 6px 24px;
+	}
+}
