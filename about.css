@@ -4,28 +4,31 @@
 
 .flex-container-about-intro {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	height: 320px;
-	margin: 188px auto 24px;
+	margin: 188px 6px 24px;
 	background: #1b4040;
 }
-.flex-container-about-intro h1 {
+.flex-container-about-intro h1,
+.about-techne-two h3 {
 	color: white;
-	padding: 150px;
+	padding: 0 25px 0 25px;
 }
 .flex-container-about-techne {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	height: 480px;
-	margin: 24px auto 24px;
+	margin: 24px 6px 24px;
 }
 
 .about-techne-one {
 	background-image: url("Image Assets/Image_09.jpg");
 	background-size: cover;
 	flex: 1;
-	box-sizing: border-box;
-	border: 6px solid #1b4040;
+	box-shadow: inset 0px 0px 0px 6px #1b4040;
+	min-height: 200px;
 }
 
 .about-techne-two {
@@ -38,8 +41,12 @@
 	color: white;
 }
 
-.about-techne-two h3 {
-	padding-left: 48px;
-	padding-right: 48px;
-	color: white;
+/******************************************************************************
+/* responsiveness */
+
+@media only screen and (max-width: 700px) {
+	.flex-container-about-intro {
+		max-height: 320px;
+		margin: 130px 6px 24px;
+	}
 }

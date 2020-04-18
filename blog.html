@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TECHNE - Work Life Balance</title>
 		<link
@@ -14,28 +15,33 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
 			rel="stylesheet"
 		/>
-	</head>
-	<header>
-		<nav>
-			<a class="nav-logo" href="index.html"
-				><img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
-			/></a>
 
-			<div class="nav-container">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+		<script src="Read-more.js" async></script>
+	</head>
 
 	<body>
+		<header>
+			<nav>
+				<a class="nav-logo" href="index.html">
+					<img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
+				/></a>
+
+				<div class="nav-container">
+					<div class="topnav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
 		<main>
 			<div class="wrapper">
-				<div class="flex-container-headline">
+				<section class="flex-container-headline">
 					<div class="homepage-box headline-image"></div>
 					<div class="homepage-box headline-text">
 						<h2>HOW TO GET STARTED WITH PLANNING</h2>
@@ -53,30 +59,80 @@
 							<a class="productpage-links" href="blogpost.html">READ MORE</a>
 						</h3>
 					</div>
-				</div>
+				</section>
 
-				<div class="flex-container-blog">
-					<div class="homepage-box blog-one">
-						<h1>PRIORITISING YOUR TO DO LISTS</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blogpost.html">READ MORE</a>
-						</h3>
+				<section>
+					<div class="flex-container-blog">
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
 					</div>
-					<div class=" homepage-box blog-two">
-						<h1>TOOLS FOR TACKLING PROCRASTINATION</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blogpost.html">READ MORE</a>
-						</h3>
-					</div>
-					<div class=" homepage-box blog-three">
-						<h1>PLANNING FOR A SUCCESSFUL LAUNCH</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blogpost.html">READ MORE</a>
-						</h3>
+				</section>
+
+				<div id="blog-row-two">
+					<div class="flex-container-blog">
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
+						<div class="homepage-box blog-post">
+							<div class="homepage-box blog-image"></div>
+							<div class="blog-details">
+								<h2>PRIORITISING YOUR TO DO LISTS</h2>
+								<h6>
+									<a class="homepage-links" href="blogpost.html">READ MORE</a>
+								</h6>
+							</div>
+						</div>
 					</div>
 				</div>
-			<div class="view-older-posts">
-			<h3>VIEW OLDER POSTS</h3> </div>
+				<div class="view-older-posts">
+					<button
+						onclick="this.style.visibility='hidden'; viewOlderPosts()"
+						class="view-older-posts-button"
+					>
+						View Older Posts
+					</button>
+				</div>
+			</div>
 		</main>
 		<form class="form" action="/example.html" method="POST">
 			<h2>SIGN UP TO PLANNING POST</h2>
@@ -85,36 +141,7 @@
 				your business along with links to useful resources.
 			</p>
 			<div class="form-box">
-				<h6>
-					<label class="name">
-						<input
-							type="text"
-							name="customer_name"
-							required
-							placeholder="full name"
-						/>
-					</label>
-				</h6>
-
-				<h6>
-					<label class="email">
-						<input
-							type="email"
-							name="email_address"
-							required
-							placeholder="please enter your email address "
-						/>
-					</label>
-				</h6>
-				<button class="button">Send</button>
-			</div>
-			<form class="form" action="/example.html" method="POST">
-				<h2>SIGN UP TO PLANNING POST</h2>
-				<p class="newsletter-signup-copy">
-					Our fortnightly email is packed with planning exercises & prompts for
-					your business along with links to useful resources.
-				</p>
-				<div class="form-box">
+				<div class="form-fields">
 					<h6>
 						<label class="name">
 							<input
@@ -125,7 +152,7 @@
 							/>
 						</label>
 					</h6>
-	
+
 					<h6>
 						<label class="email">
 							<input
@@ -136,70 +163,74 @@
 							/>
 						</label>
 					</h6>
+				</div>
+				<div class="send-button">
 					<button class="button">Send</button>
 				</div>
-			</form>
-			<footer>
-				<div class="site-footer" class="footer-container">
-					<a class="footer-logo" href="index.html"
-						><img
-							src="Image Assets/Techne.png"
-							alt="Techne Logo"
-							class="footer-logo"
-					/></a>
+			</div>
+		</form>
+
+		<footer>
+			<div class="site-footer" class="footer-container">
+				<a class="footer-logo" href="index.html">
+					<img
+						src="Image Assets/Techne.png"
+						alt="Techne Logo"
+						class="footer-logo"
+					/>
+				</a>
+				<div>
 					<div>
-						<div>
-							<ul class="footer-ul" style="padding:10px">
-								<li class="footer-li">
-									<a class="footer-links" href="index.html">Home</a>
-								</li>
-								<li class="footer-li">
-									<a class="footer-links" href="about.html">About</a>
-								</li>
-								<li class="footer-li">
-									<a class="footer-links" href="shop.html">Shop</a>
-								</li>
-								<li class="footer-li">
-									<a class="footer-links" href="blog.html">Blog</a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<ul class="social-ul" style="padding:0px">
-								<li class="social-li">
-									<a href="https://www.facebook.com" target="_blank">
-										<img
-											class="social-icons"
-											src="Image Assets/facebook_logo.png"
-											alt="facebook-logo"
-											height="25px"
-									/></a>
-								</li>
-								<li class="social-li">
-									<a href="https://www.pinterest.com" target="_blank">
-										<img
-											class="social-icons"
-											src="Image Assets/pinterest_logo.png"
-											alt="pinterest-logo"
-											height="25px"
-									/></a>
-								</li>
-								<li class="social-li">
-									<a href="https://www.youtube.com" target="_blank"
-										><img
-											class="social-icons"
-											src="Image Assets/youtube_logo.png"
-											alt="cart-logo"
-											height="25px"
-									/></a>
-								</li>
-							</ul>
-	
-							<h6>&copy; Emilia Kalyvides 2020 | All Rights Reserved</h6>
-						</div>
+						<ul class="footer-ul" style="padding: 10px;">
+							<li class="footer-li">
+								<a class="footer-links" href="index.html">Home</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="about.html">About</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="shop.html">Shop</a>
+							</li>
+							<li class="footer-li">
+								<a class="footer-links" href="blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="social-ul" style="padding: 0px;">
+							<li class="social-li">
+								<a href="https://www.facebook.com" target="_blank">
+									<img
+										class="social-icons"
+										src="Image Assets/facebook_logo.png"
+										alt="facebook-logo"
+										height="25px"
+								/></a>
+							</li>
+							<li class="social-li">
+								<a href="https://www.pinterest.com" target="_blank">
+									<img
+										class="social-icons"
+										src="Image Assets/pinterest_logo.png"
+										alt="pinterest-logo"
+										height="25px"
+								/></a>
+							</li>
+							<li class="social-li">
+								<a href="https://www.youtube.com" target="_blank">
+									<img
+										class="social-icons"
+										src="Image Assets/youtube_logo.png"
+										alt="cart-logo"
+										height="25px"
+								/></a>
+							</li>
+						</ul>
+
+						<h6>&copy; Emilia Kalyvides 2020 | All Rights Reserved</h6>
 					</div>
 				</div>
-			</footer>
-		</body>
-	</html>
-	
+			</div>
+		</footer>
+	</body>
+</html>

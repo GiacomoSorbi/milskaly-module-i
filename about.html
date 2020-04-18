@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<body>
-		<head>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>TECHNE - Work Life Balance</title>
-			<link
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TECHNE - Work Life Balance</title>
+		<link
 			rel="shortcut icon"
 			type="image/x-icon"
 			href="Image Assets/Techne-favicon.png"
 		/>
-			<link href="style.css" rel="stylesheet" type="text/css" />
-			<link href="about.css" rel="stylesheet" type="text/css" />
-			<link
-				href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
-				rel="stylesheet"
-			/>
-			<header>
-				<nav>
-					<a class="nav-logo" href="index.html"
-						><img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
-					/></a>
-	
-					<div class="nav-container">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="about.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a class="nav-logo" href="index.html">
+					<img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
+				/></a>
+
+				<div class="nav-container">
+					<div class="topnav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
@@ -30,19 +33,20 @@
 							<li><a href="blog.html">Blog</a></li>
 						</ul>
 					</div>
-				</nav>
-			</header>
+				</div>
+			</nav>
+		</header>
 
 		<main>
 			<div class="wrapper">
-				<div class="about-box flex-container-about-intro">
+				<section class="about-box flex-container-about-intro">
 					<h1>
 						TECHNE presents a buffet of practical tools and methods to help
 						freelancers like you realise your dreams, make the best use of your
 						time and craft the life you want to live
 					</h1>
-				</div>
-				<div class="flex-container-about-techne">
+				</section>
+				<section class="flex-container-about-techne">
 					<div class="about-box about-techne-one"></div>
 					<div class="about-box about-techne-two">
 						<h2>MEET OUR FOUNDER, ALICE</h2>
@@ -57,34 +61,42 @@
 							voloresto conet ut denda simus.
 						</h3>
 					</div>
-				</div>
-				<div class="homepage-box blog-title">
-					<h1>
-						<a class="homepage-links" href="blog.html"
-							>LATEST BLOG POSTS BY OUR FOUNDER</a
-						>
-					</h1>
-				</div>
-				<div class="flex-container-blog">
-					<div class="homepage-box blog-one">
-						<h1>PRIORITISING YOUR TO DO LISTS</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
-						</h3>
+				</section>
+				<section>
+					<div class="homepage-box blog-title">
+						<h1>
+							<a class="homepage-links" href="blog.html"
+								>THE LATEST ON THE BLOG</a
+							>
+						</h1>
 					</div>
-					<div class=" homepage-box blog-two">
-						<h1>TOOLS FOR TACKLING PROCRASTINATION</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
-						</h3>
+					<div class="flex-container-blog">
+						<div class="homepage-box blog-box">
+							<h2>PRIORITISING YOUR TO DO LISTS</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
+						<div class="homepage-box blog-box">
+							<h2>TOOLS FOR TACKLING PROCRASTINATION</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
+						<div class="homepage-box blog-box">
+							<h2>PLANNING FOR A SUCCESSFUL LAUNCH</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
 					</div>
-					<div class=" homepage-box blog-three">
-						<h1>PLANNING FOR A SUCCESSFUL LAUNCH</h1>
-						<h3>
-							<a class="homepage-links-dark" href="blog.html">READ MORE</a>
-						</h3>
-					</div>
-				</div>
+				</section>
 			</div>
 		</main>
 		<form class="form" action="/example.html" method="POST">
@@ -94,41 +106,47 @@
 				your business along with links to useful resources.
 			</p>
 			<div class="form-box">
-				<h6>
-					<label class="name">
-						<input
-							type="text"
-							name="customer_name"
-							required
-							placeholder="full name"
-						/>
-					</label>
-				</h6>
+				<div class="form-fields">
+					<h6>
+						<label class="name">
+							<input
+								type="text"
+								name="customer_name"
+								required
+								placeholder="full name"
+							/>
+						</label>
+					</h6>
 
-				<h6>
-					<label class="email">
-						<input
-							type="email"
-							name="email_address"
-							required
-							placeholder="please enter your email address "
-						/>
-					</label>
-				</h6>
-				<button class="button">Send</button>
+					<h6>
+						<label class="email">
+							<input
+								type="email"
+								name="email_address"
+								required
+								placeholder="please enter your email address "
+							/>
+						</label>
+					</h6>
+				</div>
+				<div class="send-button">
+					<button class="button">Send</button>
+				</div>
 			</div>
 		</form>
+
 		<footer>
 			<div class="site-footer" class="footer-container">
-				<a class="footer-logo" href="index.html"
-					><img
+				<a class="footer-logo" href="index.html">
+					<img
 						src="Image Assets/Techne.png"
 						alt="Techne Logo"
 						class="footer-logo"
-				/></a>
+					/>
+				</a>
 				<div>
 					<div>
-						<ul class="footer-ul" style="padding:10px">
+						<ul class="footer-ul" style="padding: 10px;">
 							<li class="footer-li">
 								<a class="footer-links" href="index.html">Home</a>
 							</li>
@@ -144,7 +162,7 @@
 						</ul>
 					</div>
 					<div>
-						<ul class="social-ul" style="padding:0px">
+						<ul class="social-ul" style="padding: 0px;">
 							<li class="social-li">
 								<a href="https://www.facebook.com" target="_blank">
 									<img
@@ -164,8 +182,8 @@
 								/></a>
 							</li>
 							<li class="social-li">
-								<a href="https://www.youtube.com" target="_blank"
-									><img
+								<a href="https://www.youtube.com" target="_blank">
+									<img
 										class="social-icons"
 										src="Image Assets/youtube_logo.png"
 										alt="cart-logo"

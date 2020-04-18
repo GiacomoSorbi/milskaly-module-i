@@ -4,37 +4,85 @@
 
 .flex-container-headline {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	height: 480px;
-	margin: 188px auto 24px;
+	height: 488px;
+	margin: 188px 6px 24px;
 }
 
 .headline-image {
 	background-image: url("Image Assets/Image_01.jpg");
 	background-size: cover;
 	flex: 1;
-	box-sizing: border-box;
-	border: 6px solid #3d4042;
+	box-shadow: inset 0px 0px 0px 6px #3d4042;
+	min-height: 320px;
 }
 
 .headline-text {
 	background: #3d4042;
 	flex: 1;
-	padding-right: 6px;
 	flex-direction: column;
 }
 
-.headline-text h2 {
+.headline-text h2,
+.headline-text h3 {
 	color: white;
 }
 
-.headline-text h3 {
-	padding-left: 48px;
-	padding-right: 48px;
-	color: white;
+.flex-container-blog {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 450px;
 }
-.view-older-posts {
-	padding: 24px;
+
+#blog-row-two {
+	display: none;
+}
+
+.view-older-posts-button {
+	background-color: #f0f0f0;
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px auto;
+}
+
+.blog-post {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 6px;
+}
+
+.blog-image {
+	background-image: url("Image Assets/Image_01.jpg");
+	background-size: cover;
+	flex: 3;
+}
+
+.blog-details {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #3d4042;
+}
+
+.blog-details h2 {
+	color: white;
+	margin: 12px 0 0 0;
+}
+
+.blog-details h6 {
+	color: white;
+	margin: 0 0 12px 0;
 }
 
 /******************************************************************************
@@ -74,4 +122,18 @@
 	flex: 2;
 
 	margin-left: 6px;
+}
+
+/******************************************************************************
+/* responsiveness */
+
+@media only screen and (max-width: 700px) {
+	.flex-container-headline {
+		max-height: 320px;
+		margin: 130px 6px 24px;
+	}
+
+	.flex-container-headline {
+		min-height: 600px;
+	}
 }

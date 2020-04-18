@@ -84,10 +84,6 @@ nav a:hover {
 	color: #966161;
 }
 
-#toggle {
-	display: none;
-}
-
 /******************************************************************************
 
 /* text styling */
@@ -117,7 +113,7 @@ h3 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	text-align: center;
-	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1024 - 375)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
 	padding: 6px;
 }
@@ -248,21 +244,7 @@ p {
 	height: 320px;
 }
 
-.blog-one {
-	box-shadow: inset 0px 0px 0px 6px #3d4042;
-	flex: 1;
-	flex-direction: column;
-	min-height: 100px;
-	margin: 6px 6px 6px;
-}
-.blog-two {
-	box-shadow: inset 0px 0px 0px 6px #3d4042;
-	flex: 1;
-	flex-direction: column;
-	min-height: 100px;
-	margin: 6px 6px 6px;
-}
-.blog-three {
+.blog-box {
 	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	flex: 1;
 	flex-direction: column;
@@ -303,7 +285,7 @@ p {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin: 3px 3px 12px 3px;
+	margin: 0 3px 0px 3px;
 }
 
 input {
@@ -407,9 +389,7 @@ footer {
 /******************************************************************************
 /* responsiveness */
 
-/*MOBILE PHONE - iPhone X 375px screen*/
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 700px) {
 	.topnav {
 		justify-content: center;
 		max-height: 100px;
