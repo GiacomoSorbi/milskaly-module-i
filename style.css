@@ -158,7 +158,6 @@ p {
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
 	padding: 6px;
 }
-
 /******************************************************************************
 /* button styling */
 
@@ -249,7 +248,12 @@ p {
 	flex: 1;
 	flex-direction: column;
 	min-height: 100px;
-	margin: 6px 6px 6px;
+	margin: 6px;
+}
+
+.blog-box h2 {
+	margin: 6px;
+	padding: 6px;
 }
 
 /******************************************************************************

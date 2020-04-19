@@ -14,14 +14,17 @@
 .flex-container-product {
 	display: flex;
 	flex-direction: row;
-	height: 480px;
+	flex-wrap: wrap;
+	min-height: 480px;
 }
 
 .product-img {
 	flex: 1;
 	box-sizing: border-box;
 	border: 6px solid #966161;
-	margin-right: 6px;
+
+	min-height: 320px;
+	margin: 3px;
 }
 
 /* image gallery */
@@ -78,21 +81,24 @@
 	background: #966161;
 	flex-direction: column;
 	flex: 1;
-	padding-right: 6px;
-	margin-left: 6px;
+	margin: 3px;
 }
 
 .product-description h2,
-h3,
-h4 {
+h3 {
 	color: white;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.product-description p {
+	color: white;
+	padding: 0px 12px;
 }
 
 /* image gallery */
 .related-products-title {
-	display: flex;
 	height: 80px;
-	margin: 48px auto 24px;
+	margin: 24px 6px 24px;
 	background: #966161;
 }
 .related-products-title h1 {
@@ -106,6 +112,7 @@ h4 {
 	overflow: hidden;
 	margin: 24px auto 24px;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .carousel {
@@ -114,6 +121,7 @@ h4 {
 	list-style: none;
 	transition: all 1s ease;
 	padding: 0;
+	margin: 0;
 }
 
 .button-wrapper {
@@ -170,4 +178,16 @@ h4 {
 
 .blog-title {
 	margin-top: 48px;
+}
+/******************************************************************************
+/* responsiveness */
+
+@media only screen and (max-width: 650px) {
+	.product-box {
+		max-height: 320px;
+		margin: 130px 6px 24px;
+	}
+	.blog-title {
+		margin-top: 0;
+	}
 }
