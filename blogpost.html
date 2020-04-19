@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TECHNE - Work Life Balance</title>
 		<link
@@ -10,29 +11,31 @@
 		/>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		<link href="blog.css" rel="stylesheet" type="text/css" />
-
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
-	<header>
-		<nav>
-			<a class="nav-logo" href="index.html"
-				><img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
-			/></a>
 
-			<div class="nav-container">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+	<body>
+		<header>
+			<nav>
+				<a class="nav-logo" href="index.html">
+					<img src="Image Assets/Techne.png" alt="Techne Logo" class="nav-logo"
+				/></a>
 
+				<div class="nav-container">
+					<div class="topnav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 	<body>
 		<main>
 			<div class="wrapper">
@@ -91,41 +94,47 @@
 				your business along with links to useful resources.
 			</p>
 			<div class="form-box">
-				<h6>
-					<label class="name">
-						<input
-							type="text"
-							name="customer_name"
-							required
-							placeholder="full name"
-						/>
-					</label>
-				</h6>
+				<div class="form-fields">
+					<h6>
+						<label class="name">
+							<input
+								type="text"
+								name="customer_name"
+								required
+								placeholder="full name"
+							/>
+						</label>
+					</h6>
 
-				<h6>
-					<label class="email">
-						<input
-							type="email"
-							name="email_address"
-							required
-							placeholder="please enter your email address "
-						/>
-					</label>
-				</h6>
-				<button class="button">Send</button>
+					<h6>
+						<label class="email">
+							<input
+								type="email"
+								name="email_address"
+								required
+								placeholder="please enter your email address "
+							/>
+						</label>
+					</h6>
+				</div>
+				<div class="send-button">
+					<button class="button">Send</button>
+				</div>
 			</div>
 		</form>
+
 		<footer>
 			<div class="site-footer" class="footer-container">
-				<a class="footer-logo" href="index.html"
-					><img
+				<a class="footer-logo" href="index.html">
+					<img
 						src="Image Assets/Techne.png"
 						alt="Techne Logo"
 						class="footer-logo"
-				/></a>
+					/>
+				</a>
 				<div>
 					<div>
-						<ul class="footer-ul" style="padding:10px">
+						<ul class="footer-ul" style="padding: 10px;">
 							<li class="footer-li">
 								<a class="footer-links" href="index.html">Home</a>
 							</li>
@@ -141,7 +150,7 @@
 						</ul>
 					</div>
 					<div>
-						<ul class="social-ul" style="padding:0px">
+						<ul class="social-ul" style="padding: 0px;">
 							<li class="social-li">
 								<a href="https://www.facebook.com" target="_blank">
 									<img
@@ -161,8 +170,8 @@
 								/></a>
 							</li>
 							<li class="social-li">
-								<a href="https://www.youtube.com" target="_blank"
-									><img
+								<a href="https://www.youtube.com" target="_blank">
+									<img
 										class="social-icons"
 										src="Image Assets/youtube_logo.png"
 										alt="cart-logo"
@@ -178,3 +187,4 @@
 		</footer>
 	</body>
 </html>
+
