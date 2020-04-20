@@ -68,11 +68,11 @@
 }
 
 .blog-details {
-	flex: 2;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	background-color: #3d4042;
-	min-height: 100px;
+	min-height: 120px;
 }
 
 .blog-details h2 {
@@ -99,12 +99,7 @@
 	background-size: cover;
 	background-position: center center;
 	max-height: 480px;
-	margin: 188px auto 24px;
-}
-
-.title {
-	padding-top: 24px;
-	padding-bottom: 12px;
+	margin: 188px auto 0px;
 }
 
 .flex-container-blog-post-images {
@@ -122,17 +117,35 @@
 	margin: 3px;
 }
 
-p {
+.blog-copy p {
 	margin: 24px;
+	text-align: left;
+}
+h6 {
+	color: #3d4042;
+}
+
+.text-links {
+	color: #3d4042;
+}
+
+li.blog-bullets {
+	color: #3d4042;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	text-align: left;
+	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
+	padding: 6px;
+	margin: auto 24px;
 }
 
 /******************************************************************************
 /* responsiveness */
-
 @media only screen and (max-width: 650px) {
 	.flex-container-headline {
-		min-height: 600px;
-		margin: 130px 6px 24px;
+		min-height: 530px;
+		margin: 130px 6px 0px;
 	}
 	.flex-container-blog {
 		margin-top: 3px;
@@ -143,11 +156,14 @@ p {
 	.flex-container-headline-image {
 		min-height: 200px;
 	}
+	.blog-details {
+		max-height: 80px;
+	}
 }
 
 @media only screen and (max-width: 450px) {
 	.flex-container-blog {
-		min-height: 990px;
+		min-height: 1400px;
 		margin-top: 3px;
 		margin-bottom: 3px;
 	}
