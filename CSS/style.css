@@ -161,6 +161,10 @@ p {
 /******************************************************************************
 /* button styling */
 
+.send-button {
+	margin: 6px;
+}
+
 .button {
 	display: block;
 	background-color: #966161;
@@ -226,6 +230,49 @@ p {
 	flex-basis: 100%;
 	justify-content: center;
 	align-items: center;
+}
+
+.flex-container-header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-height: 480px;
+	margin: 188px 6px 24px;
+}
+/******************************************************************************
+
+/* Image Styling */
+
+.banner-image {
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	max-width: 100%;
+	z-index: -1;
+}
+
+.large-image {
+	flex: 2;
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	max-height: 480px;
+	z-index: -1;
+}
+
+.image {
+	flex: 2;
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	max-height: 320px;
+	z-index: -1;
 }
 
 /* Blog boxes */
@@ -439,5 +486,13 @@ footer {
 
 	.form-box {
 		flex-flow: column nowrap;
+	}
+
+	.large-image {
+		max-height: 320px;
+	}
+
+	.flex-container-header {
+		margin: 130px 6px 24px;
 	}
 }

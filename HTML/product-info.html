@@ -10,11 +10,13 @@
 			href="Image Assets/Techne-favicon.png"
 		/>
 		<link href="style.css" rel="stylesheet" type="text/css" />
-		<link href="blog.css" rel="stylesheet" type="text/css" />
+		<link href="product-info.css" rel="stylesheet" type="text/css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="image-carousel.js" async></script>
+		<script src="image-slides.js" async></script>
 	</head>
 
 	<body>
@@ -36,57 +38,97 @@
 				</div>
 			</nav>
 		</header>
-	<body>
 		<main>
 			<div class="wrapper">
-				<div class="flex-container-headline-image"></div>
-				<h2 class="title">HOW TO GET STARTED WITH PLANNING</h2>
-				<p>
-					Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero quam
-					ut maiosae rovitiur? Qui idendis dis corro et quis eos volecea volore
-					iunt essedit ape eniscius dolupta que nitatin et essimil lesequa
-					spedior erferro idus id magnimagname sam, que ea qui intiati busdae
-					quis se ne que dolupta quatem que nobit fuga. Nem vel modit, ut
-					excerem idunt estis as ullo ium es ma sapicat explitatem unt aut quam
-					nis apel id ma quasim fugitae sam voloresto conet ut denda simus.
-				</p>
+				<section>
+					<div class="flex-container-product">
+						<div class="homepage-box product-img slides">
+							<ul>
+								<li class="slide showing"></li>
+								<li class="slide"></li>
+								<li class="slide"></li>
+								<li class="slide"></li>
+								<li class="slide"></li>
+							</ul>
+						</div>
+						<div class="homepage-box product-description">
+							<h2>2020 WEEKLY PLANNER</h2>
+							<h3>TAUPE | £25</h3>
+							<p>
+								Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero
+								quam ut maiosae rovitiur? Qui idendis dis corro et quis eos
+								volecea volore iunt essedit ape eniscius dolupta que nitatin et
+								essimil lesequa spedior erferro idus id magnimagname sam, que ea
+								qui intiati busdae quis se ne que dolupta quatem que nobit fuga.
+								Nem vel modit, ut excerem idunt estis as ullo ium es ma sapicat
+								explitatem unt aut quam nis apel id ma quasim fugitae sam
+								voloresto conet ut denda simus.
+							</p>
+							<h3>
+								<a class="productpage-links" href="shop.html"
+									>Click here to visit the Techne Shop</a
+								>
+							</h3>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="homepage-box related-products-title">
+						<h1>RELATED PRODUCTS</h1>
+					</div>
+					<div class="flex-container-related-items">
+						<ul class="carousel">
+							<li class="products product-01"></li>
+							<li class="products product-02"></li>
+							<li class="products product-03"></li>
+							<li class="products product-04"></li>
+							<li class="products product-05"></li>
+						</ul>
+						<div class="button-wrapper">
+							<button class="slide-left">&#10216;</button>
+							<button class="slide-right">&#10217;</button>
+						</div>
+					</div>
+				</section>
 
-				<div class="flex-container-blog-post-images">
-					<div class="homepage-box blog-post-one"></div>
-					<div class="homepage-box blog-post-two"></div>
-				</div>
-
-				<p>
-					Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero quam
-					ut maiosae rovitiur? Qui idendis dis corro et quis eos volecea volore
-					iunt essedit ape eniscius dolupta que nitatin et essimil lesequa
-					spedior erferro idus id magnimagname sam, que ea qui intiati busdae
-					quis se ne que dolupta quatem que nobit fuga. Nem vel modit, ut
-					excerem idunt estis as ullo ium es ma sapicat explitatem unt aut quam
-					nis apel id ma quasim fugitae sam voloresto conet ut denda simus.
-				</p>
-				<p>
-					Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero quam
-					ut maiosae rovitiur? Qui idendis dis corro et quis eos volecea volore
-					iunt essedit ape eniscius dolupta que nitatin et essimil lesequa
-					spedior erferro idus id magnimagname sam, que ea qui intiati busdae
-					quis se ne que dolupta quatem que nobit fuga. Nem vel modit, ut
-					excerem idunt estis as ullo ium es ma sapicat explitatem unt aut quam
-					nis apel id ma quasim fugitae sam voloresto conet ut denda simus.
-				</p>
-
-				<p>
-					Aximperunt modiatiatus quo eossimod molore nosanis quiaecus dero quam
-					ut maiosae rovitiur? Qui idendis dis corro et quis eos volecea volore
-					iunt essedit ape eniscius dolupta que nitatin et essimil lesequa
-					spedior erferro idus id magnimagname sam, que ea qui intiati busdae
-					quis se ne que dolupta quatem que nobit fuga. Nem vel modit, ut
-					excerem idunt estis as ullo ium es ma sapicat explitatem unt aut quam
-					nis apel id ma quasim fugitae sam voloresto conet ut denda simus.
-				</p>
-				</div>
+				<section>
+					<div class="homepage-box blog-title">
+						<h1>
+							<a class="homepage-links" href="blog.html"
+								>THE LATEST ON THE BLOG</a
+							>
+						</h1>
+					</div>
+					<div class="flex-container-blog">
+						<div class="homepage-box blog-box">
+							<h2>PRIORITISING YOUR TO DO LISTS</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
+						<div class="homepage-box blog-box">
+							<h2>TOOLS FOR TACKLING PROCRASTINATION</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
+						<div class="homepage-box blog-box">
+							<h2>PLANNING FOR A SUCCESSFUL LAUNCH</h2>
+							<h3>
+								<a class="homepage-links-dark" href="blogpost.html"
+									>READ MORE</a
+								>
+							</h3>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
+
 		<form class="form" action="/example.html" method="POST">
 			<h2>SIGN UP TO PLANNING POST</h2>
 			<p class="newsletter-signup-copy">
@@ -187,4 +229,3 @@
 		</footer>
 	</body>
 </html>
-

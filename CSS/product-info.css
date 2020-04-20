@@ -2,20 +2,12 @@
 
 /* PRODUCT INFO PAGE */
 
-.product-title {
-	display: flex;
-	height: 80px;
-	margin: 188px auto 24px;
-	background: #966161;
-	justify-content: center;
-	align-items: center;
-}
-
 .flex-container-product {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	min-height: 480px;
+	margin: 188px auto 24px;
 }
 
 .product-img {
@@ -57,23 +49,23 @@
 }
 
 .slide:nth-of-type(1) {
-	background-image: url("Image Assets/Image_04.jpg");
+	background-image: url("Image Assets/2020_diary_flatlay.jpg");
 	background-size: cover;
 }
 .slide:nth-of-type(2) {
-	background-image: url("Image Assets/Image_05.jpg");
+	background-image: url("Image Assets/2020_diary_01.jpg");
 	background-size: cover;
 }
 .slide:nth-of-type(3) {
-	background-image: url("Image Assets/Image_06.jpg");
+	background-image: url("Image Assets/2020_diary_02.jpg");
 	background-size: cover;
 }
 .slide:nth-of-type(4) {
-	background-image: url("Image Assets/Image_07.jpg");
+	background-image: url("Image Assets/2020_diary_03.jpg");
 	background-size: cover;
 }
 .slide:nth-of-type(5) {
-	background-image: url("Image Assets/Image_08.jpg");
+	background-image: url("Image Assets/2020_diary_04.jpg");
 	background-size: cover;
 }
 
@@ -163,15 +155,28 @@ h3 {
 	margin-right: 6px;
 }
 
-.product-01,
-.product-02,
-.product-03,
-.product-04,
-.product-05,
-.product-06,
-.product-07,
-.product-08 {
-	background-image: url("Image Assets/Image_04.jpg");
+.product-01 {
+	background-image: url("Image Assets/Diary_Journal_Flaylay.jpg");
+	background-size: cover;
+	border: 4px solid #966161;
+}
+.product-02 {
+	background-image: url("Image Assets/Focus_Book_Flatlay.jpg");
+	background-size: cover;
+	border: 4px solid #966161;
+}
+.product-03 {
+	background-image: url("Image Assets/2020_diary_flatlay.jpg");
+	background-size: cover;
+	border: 4px solid #966161;
+}
+.product-04 {
+	background-image: url("Image Assets/Journal_flatlay.jpg");
+	background-size: cover;
+	border: 4px solid #966161;
+}
+.product-05 {
+	background-image: url("Image Assets/Set_of_three.jpg");
 	background-size: cover;
 	border: 4px solid #966161;
 }
@@ -181,8 +186,12 @@ h3 {
 }
 /******************************************************************************
 /* responsiveness */
-
 @media only screen and (max-width: 650px) {
+	.flex-container-product {
+		min-height: 320px;
+		margin: 130px 6px 24px;
+	}
+
 	.product-box {
 		max-height: 320px;
 		margin: 130px 6px 24px;

@@ -1,31 +1,10 @@
-/******************************************************************************
-
-/* SHOP PAGE */
-
-/* product boxes */
-
-.shop-title {
-	margin: 188px 6px 24px;
-	display: flex;
-	height: 80px;
-	background: #647973;
-}
-
-.shop-title,
-h1 {
-	color: white;
-}
-
-/******************************************************************************
-
 /* Feature Product */
 
 .feature-product {
 	display: flex;
 	flex-direction: row;
 	max-height: 480px;
-	margin-bottom: 24px;
-	margin: 6px;
+	margin: 188px 6px 24px;
 }
 
 .feature-product-details {
@@ -118,7 +97,7 @@ h1 {
 	border: 6px solid #647973;
 	text-align: center;
 	align-content: center;
-	height: 320px;
+	max-height: 320px;
 }
 
 /******************************************************************************
@@ -282,16 +261,19 @@ h1 {
 }
 
 @media only screen and (max-width: 650px) {
-	.shop-title {
-		max-height: 320px;
-		margin: 130px 6px 24px;
-	}
 	.product {
 		flex-direction: column;
 	}
-	.flex-container-product {
+	.feature-product {
 		flex-direction: column;
 		min-height: 750px;
-		min-width: 375px;
+		margin: 130px 6px 24px;
+	}
+
+	.product-one-details,
+	.product-two-details,
+	.product-three-details,
+	.product-four-details {
+		max-height: 200px;
 	}
 }
