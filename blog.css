@@ -13,6 +13,7 @@
 .headline-image {
 	background-image: url("Image Assets/Image_01.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 1;
 	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	min-height: 320px;
@@ -67,6 +68,7 @@
 .blog-image {
 	background-image: url("Image Assets/Image_02.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 3;
 	box-shadow: inset 0px 0px 0px 6px #3d4042;
 	min-height: 200px;
@@ -97,6 +99,7 @@
 .flex-container-headline-image {
 	background-image: url("Image Assets/Image_01.jpg");
 	background-size: cover;
+	background-position: center center;
 	height: 488px;
 	margin: 188px auto 24px;
 }
@@ -118,6 +121,7 @@
 .blog-post-one {
 	background-image: url("Image Assets/Image_02.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 2;
 
 	min-height: 200px;
@@ -126,6 +130,7 @@
 .blog-post-two {
 	background-image: url("Image Assets/Image_02.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 2;
 
 	min-height: 200px;

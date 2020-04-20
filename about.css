@@ -26,6 +26,7 @@
 .about-techne-one {
 	background-image: url("Image Assets/Image_09.jpg");
 	background-size: cover;
+	background-position: top center;
 	flex: 1;
 	box-shadow: inset 0px 0px 0px 6px #1b4040;
 	min-height: 200px;

@@ -15,6 +15,7 @@
 .shop-all-one {
 	background-image: url("Image Assets/Image_01.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 2;
 	box-shadow: inset 0px 0px 0px 6px #1b4040;
 	min-height: 200px;
@@ -49,6 +50,7 @@
 .shop-planner-inserts-img {
 	background-image: url("Image Assets/Image_02.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 2;
 	box-shadow: inset 0px 0px 0px 6px #966161;
 	min-height: 200px;
@@ -63,6 +65,7 @@
 .shop-planner-inserts-img {
 	background-image: url("Image Assets/Image_03.jpg");
 	background-size: cover;
+	background-position: center center;
 	flex: 2;
 	box-shadow: inset 0px 0px 0px 6px #647973;
 	min-height: 200px;
