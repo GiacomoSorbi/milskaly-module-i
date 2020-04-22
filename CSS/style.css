@@ -237,7 +237,7 @@ p {
 	flex-wrap: wrap;
 	flex-direction: row;
 	max-height: 480px;
-	margin: 188px 6px 24px;
+	margin: 180px 6px 24px;
 }
 /******************************************************************************
 
@@ -440,7 +440,17 @@ footer {
 /******************************************************************************
 /* responsiveness */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
+	.flex-container-blog {
+		max-height: 245px;
+	}
+
+	.flex-container-header {
+		margin-top: 153px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
 	.topnav {
 		justify-content: center;
 		max-height: 100px;
@@ -493,6 +503,9 @@ footer {
 	}
 
 	.flex-container-header {
-		margin: 130px 6px 24px;
+		margin-top: 133px;
+	}
+	.flex-container-blog {
+		max-height: 320px;
 	}
 }

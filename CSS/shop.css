@@ -266,14 +266,27 @@
 	}
 	.feature-product {
 		flex-direction: column;
-		min-height: 750px;
+		min-height: 550px;
 		margin: 130px 6px 24px;
+	}
+	.product-details,
+	.feature-product-details {
+		padding: 3px;
+	}
+	.product-details h2 {
+		padding: 3px;
+	}
+	.feature-product-details h2 {
+		padding: 3px;
 	}
 
 	.product-one-details,
 	.product-two-details,
 	.product-three-details,
 	.product-four-details {
-		max-height: 200px;
+		min-height: 150px;
+	}
+	.product-image {
+		max-height: 320px;
 	}
 }
