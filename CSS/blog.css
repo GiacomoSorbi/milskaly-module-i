@@ -153,7 +153,7 @@ li.blog-bullets {
 
 /******************************************************************************
 /* responsiveness */
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1000px) {
 	.flex-container-blog {
 		margin-top: 3px;
 		margin-bottom: 3px;
@@ -164,7 +164,19 @@ li.blog-bullets {
 		max-height: 150px;
 	}
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 670px) {
+	.flex-container-blog {
+		margin-top: 3px;
+		margin-bottom: 3px;
+		min-height: 1350px;
+	}
+
+	.blog-details {
+		max-height: 150px;
+	}
+}
+@media only screen and (max-width: 450px) {
 	.flex-container-headline {
 		min-height: 530px;
 		margin: 130px 6px 0px;
