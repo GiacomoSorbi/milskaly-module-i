@@ -116,6 +116,8 @@
 p.blog-copy {
 	text-align: left;
 	margin: 24px;
+	font-size: 14px;
+	line-height: 1.4em;
 }
 
 h2.title-text {
@@ -147,6 +149,8 @@ li.blog-bullets {
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
 	padding: 6px;
 	margin: auto 24px;
+	font-size: 14px;
+	line-height: 1.4em;
 }
 
 /******************************************************************************
