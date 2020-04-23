@@ -154,7 +154,7 @@ p {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	text-align: center;
-	font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1024 - 375)));
+	font-size: calc(12px + (12 - 12) * ((100vw - 300px) / (1024 - 375)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1024 - 375)));
 	padding: 6px;
 }
