@@ -59,8 +59,6 @@
 }
 
 .blog-image {
-	background-image: url("Image Assets/Image_02.jpg");
-	background-size: cover;
 	background-position: center center;
 	flex: 4;
 	box-shadow: inset 0px 0px 0px 6px #3d4042;
