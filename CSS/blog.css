@@ -93,8 +93,6 @@
 /* BLOG POST */
 
 .flex-container-headline-image {
-	background-image: url("Image Assets/Image_01.jpg");
-	background-size: cover;
 	background-position: center center;
 	max-height: 480px;
 	margin: 188px auto 0px;
