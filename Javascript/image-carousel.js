@@ -20,14 +20,14 @@ const maxX = -(
 	productMarginRight
 );
 
-leftButton.addEventListener("click", function() {
+leftButton.addEventListener("click", function () {
 	if (offset !== 0) {
 		offset += carouselWidth + productMarginRight;
 		carousel.style.transform = `translateX(${offset}px)`;
 	}
 });
 
-rightButton.addEventListener("click", function() {
+rightButton.addEventListener("click", function () {
 	if (offset !== maxX) {
 		offset -= carouselWidth + productMarginRight;
 		carousel.style.transform = `translateX(${offset}px)`;
