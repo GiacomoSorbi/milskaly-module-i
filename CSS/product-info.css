@@ -12,8 +12,7 @@
 
 .product-img {
 	flex: 1;
-	box-sizing: border-box;
-	border: 6px solid #966161;
+	box-shadow: inset 6px #966161;
 
 	min-height: 320px;
 	margin: 3px;
